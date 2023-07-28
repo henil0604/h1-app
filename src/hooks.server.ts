@@ -5,6 +5,7 @@
 
 import authHandler from "$lib/server/auth";
 import trpcHandler from "$lib/server/trpc/handler";
+import pusherHandler from "$lib/server/pusher/handler";
 import { sequence } from "@sveltejs/kit/hooks";
 
-export const handle = sequence(authHandler, trpcHandler);
+export const handle = sequence(authHandler, trpcHandler, pusherHandler);
