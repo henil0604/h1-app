@@ -15,7 +15,7 @@ export declare module "@auth/core/types" {
 		id?: string
 	}
 	interface Session {
-		// user that will be set to server
+		// user that will be set to session
 		user: {
 			id?: string
 		} & DefaultSession['user'];
